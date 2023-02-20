@@ -1,0 +1,272 @@
+{
+  "Zaun": {
+    "wealth": 0.4,
+    "community": 1.15,
+    "tendencies": {
+      "past": {
+        "Aristocrata": 0.4,
+        "Criminoso": 6,
+        "Estudioso": 2,
+        "Inventor": 3,
+        "Herói Local": 1.5,
+        "Órfão": 5,
+        "Mercenário": 4
+      },
+      "class": {
+        "Mercurial": 3,
+        "Bruto": 2,
+        "Atirador": 2.5,
+        "Tecmaturgo": 5,
+        "Bodisatva": 0.5,
+        "Xamã": 0.8
+      },
+      "lifestyle": {
+        "Miserável": 2,
+        "Esquálido": 7,
+        "Pobre": 5,
+        "Modesto": 0.3,
+        "Confortável": 0.4,
+        "Rico": 0.2,
+        "Aristocrático": 0.7
+      }
+    },
+    "origin_weights": {
+      "Águas de Sentina": 1.2,
+      "Bandópolis": 0.08,
+      "Demacia": 0.7,
+      "Freljord": 0.5,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 1.5,
+      "Ixtal": 0.7,
+      "Piltover": 2.5,
+      "Shurima": 1.1,
+      "Targon": 1.15,
+      "Zaun": 3
+    }
+  },
+  "Piltover": {
+    "wealth": 1.2,
+    "community": 0.8,
+    "tendencies": {
+      "past": {
+        "Aristocrata": 1.5,
+        "Criminoso": 0.35,
+        "Estudioso": 2.5,
+        "Inventor": 4,
+        "Herói Local": 1.1,
+        "Órfão": 0.9,
+        "Mercenário": 1.4
+      },
+      "class": {
+        "Mercurial": 0.9,
+        "Bruto": 0.4,
+        "Atirador": 2.5,
+        "Tecmaturgo": 8,
+        "Bodisatva": 0.8,
+        "Xamã": 0.9
+      },
+      "lifestyle": {
+        "Miserável": 0.01,
+        "Esquálido": 0.04,
+        "Pobre": 0.6,
+        "Modesto": 3,
+        "Confortável": 8,
+        "Rico": 4,
+        "Aristocrático": 5
+      }
+    },
+    "origin_weights": {
+      "Águas de Sentina": 1.1,
+      "Bandópolis": 0.1,
+      "Demacia": 0.75,
+      "Freljord": 0.6,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 1.3,
+      "Ixtal": 0.9,
+      "Piltover": 3,
+      "Shurima": 1.2,
+      "Targon": 0.9,
+      "Zaun": 2.5
+    }
+  },
+  "Ionia": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 1.4,
+      "Bandópolis": 0.2,
+      "Demacia": 0.7,
+      "Freljord": 0.4,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 3.5,
+      "Ixtal": 1.9,
+      "Piltover": 1.2,
+      "Shurima": 0.9,
+      "Targon": 1.25,
+      "Zaun": 1.5
+    }
+  },
+  "Demacia": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 0.7,
+      "Bandópolis": 0.15,
+      "Demacia": 5,
+      "Freljord": 2.5,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 0.8,
+      "Ixtal": 0.7,
+      "Piltover": 0.9,
+      "Shurima": 0.9,
+      "Targon": 0.5,
+      "Zaun": 1.1
+    }
+  },
+  "Bandópolis": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 0.1,
+      "Bandópolis": 10,
+      "Demacia": 0.1,
+      "Freljord": 0.1,
+      "Ilhas das Sombras": 0.2,
+      "Ionia": 0.8,
+      "Ixtal": 0.7,
+      "Piltover": 0.8,
+      "Shurima": 0.6,
+      "Targon": 0.9,
+      "Zaun": 0.3
+    }
+  },
+  "Freljord": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 1,
+      "Bandópolis": 0.2,
+      "Demacia": 3.5,
+      "Freljord": 5,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 1.5,
+      "Ixtal": 0.7,
+      "Piltover": 1.1,
+      "Shurima": 0.9,
+      "Targon": 1.8,
+      "Zaun": 1.2
+    }
+  },
+  "Ilhas das Sombras": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 1.5,
+      "Bandópolis": 0.15,
+      "Demacia": 0.5,
+      "Freljord": 0.1,
+      "Ilhas das Sombras": 5,
+      "Ionia": 0.2,
+      "Ixtal": 0.2,
+      "Piltover": 0.1,
+      "Shurima": 0.8,
+      "Targon": 0.15,
+      "Zaun": 0.1
+    }
+  },
+  "Águas de Sentina": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 2,
+      "Bandópolis": 0.75,
+      "Demacia": 0.9,
+      "Freljord": 0.85,
+      "Ilhas das Sombras": 0.6,
+      "Ionia": 1.3,
+      "Ixtal": 0.9,
+      "Piltover": 1.1,
+      "Shurima": 0.7,
+      "Targon": 0.8,
+      "Zaun": 1.25
+    }
+  },
+  "Shurima": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 0.3,
+      "Bandópolis": 0.2,
+      "Demacia": 1.2,
+      "Freljord": 0.6,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 1.1,
+      "Ixtal": 2,
+      "Piltover": 2,
+      "Shurima": 4.5,
+      "Targon": 1.9,
+      "Zaun": 1.8
+    }
+  },
+  "Noxus": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 2.5,
+      "Bandópolis": 1.2,
+      "Demacia": 1.25,
+      "Freljord": 1.85,
+      "Ilhas das Sombras": 0.1,
+      "Ionia": 1.65,
+      "Ixtal": 0.6,
+      "Piltover": 1.6,
+      "Shurima": 1.6,
+      "Targon": 1.7,
+      "Zaun": 1.4
+    }
+  },
+  "Targon": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 0.6,
+      "Bandópolis": 0.2,
+      "Demacia": 2.5,
+      "Freljord": 1.95,
+      "Ilhas das Sombras": 0.12,
+      "Ionia": 0.7,
+      "Ixtal": 0.6,
+      "Piltover": 0.7,
+      "Shurima": 1.1,
+      "Targon": 3,
+      "Zaun": 0.7
+    }
+  },
+  "Ixtal": {
+    "wealth": 1,
+    "community": 1,
+    "tendencies": {},
+    "origin_weights": {
+      "Águas de Sentina": 0.35,
+      "Bandópolis": 0.35,
+      "Demacia": 0.2,
+      "Freljord": 0.4,
+      "Ilhas das Sombras": 0.01,
+      "Ionia": 0.3,
+      "Ixtal": 4,
+      "Piltover": 0.4,
+      "Shurima": 1.5,
+      "Targon": 0.2,
+      "Zaun": 0.2
+    }
+  }
+}

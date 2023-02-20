@@ -1,0 +1,674 @@
+{
+    "Pais": [
+        {"chance": 0.9, "result": "Você sabe quem seus pais são ou foram"},
+        {"chance": 0.1, "result": "Você não sabe quem seus pais são ou foram"}
+    ],
+
+    "Pais do Meio-Vastaya": [
+        {"chance": 0.625, "result": "Um dos pais era um vastaya e o outro um humano"},
+        {"chance": 0.125, "result": "Um dos pais era um meio-vastaya e o outro um vastaya"},
+        {"chance": 0.125, "result": "Um dos pais era um meio-vastaya e o outro um humano"},
+        {"chance": 0.125, "result": "Ambos os pais eram meio-vastayas"}
+    ],
+
+    "Local de Nascimento": [
+        {"chance": 0.5,  "result": "Casa da família"},
+        {"chance": 0.06, "result": "Casa de um amigo da família"},
+		{"chance": 0.1, "result": "Casa de uma parteira"},
+        {"chance": 0.02, "result": "Carruagem, carroça ou algo do tipo"},
+        {"chance": 0.03, "result": "Acampamento"},
+        {"chance": 0.02, "result": "Celeiro"},
+        {"chance": 0.02, "result": "Floresta"},
+        {"chance": 0.02, "result": "Campo aberto"},
+        {"chance": 0.04, "result": "Templo"},
+        {"chance": 0.01, "result": "Beco ou rua"},
+        {"chance": 0.03, "result": "Castelo, fortaleza ou forte"},
+        {"chance": 0.01, "result": "Em um laboratório"},
+        {"chance": 0.01, "result": "A bordo de um navio"},
+        {"chance": 0.03, "result": "Taverna ou pousada"},
+        {"chance": 0.02, "result": "Em uma prisão"},
+        {"chance": 0.01, "result": "Em uma casa na árvore"},
+        {"chance": 0.02, "result": "Em uma arena de gladiadores"},
+        {"chance": 0.01, "result": "Campo de batalha"},
+        {"chance": 0.01, "result": "Esgotos"},
+        {"chance": 0.01, "result": "Quartel general de uma organização secreta"},
+        {"chance": 0.02, "result": "No reino espiritual"}
+    ],
+
+    "Número de Irmãos": [
+        {"chance": 0.39,  "result": "0"},
+        {"chance": 0.35, "result": "1d4",     "extra_rolls":  ["Ordem de Nascimento"]},
+        {"chance": 0.2,  "result": "1d6 + 1", "extra_rolls":  ["Ordem de Nascimento"]},
+        {"chance": 0.05, "result": "1d8 + 2", "extra_rolls":  ["Ordem de Nascimento"]},
+        {"chance": 0.01, "result": "1d10 + 3", "extra_rolls":  ["Ordem de Nascimento"]}
+    ],
+
+    "Ordem de Nascimento": [
+        {"chance": 0.16666666666666666, "result": "Gêmeo, trigêmeo ou quadrigêmeo"},
+        {"chance": 0.4166666666666667, "result": "Você é mais velho"},
+        {"chance": 0.4166666666666667, "result": "Você é mais novo"}
+    ],
+
+    "Responsáveis": [
+        {"chance": 0.01, "result": "Ninguém", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes"]},
+        {"chance": 0.01, "result": "Um general ou guerreiro do local", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Guerreiro"]},
+        {"chance": 0.01, "result": "Templo ou monastério", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Tutor Monastério"]},
+        {"chance": 0.02, "result": "Irmãos ou membros de uma origem diferente da sua", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Tutor"]},
+        {"chance": 0.02, "result": "Família adotiva", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Familia Adotiva"]},
+        {"chance": 0.08, "result": "Parente distante", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Parente distante"]},
+        {"chance": 0.1, "result": "Orfanato", "extra_rolls":  ["Pais Ausentes"]},
+        {"chance": 0.1, "result": "Avós", "extra_rolls":  ["Pais Ausentes", "Pais Ausentes", "Novo personagem.Avô", "Novo personagem.Avó"]},
+        {"chance": 0.2, "result": "Mãe solteira ou madrasta", "extra_rolls":  ["Pais Ausentes", "Novo personagem.Mãe"]},
+        {"chance": 0.2, "result": "Pai solteiro ou padrasto", "extra_rolls":  ["Pais Ausentes", "Novo personagem.Pai"]},
+        {"chance": 0.25, "result": "Ambos os pais", "extra_rolls": ["Novo personagem.Mãe", "Novo personagem.Pai"]}
+    ],
+
+    "Pais Ausentes": [
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe foi comprar fumo e desapareceu", "extra_rolls":  ["Situação"]},
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe morreu (role na tabela de Causa de Morte)", "extra_rolls": ["Causas da Morte"]},
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe foi preso(a)", "extra_rolls":  ["Crimes"]},
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe te abandonou", "extra_rolls":  ["Situação", "Andarilho"]},
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe desapareceu misteriosamente", "extra_rolls":  ["Situação", "Novo personagem"]},
+        {"chance": 0.16666666666666666, "result": "Seu pai/ mãe foi raptado(a) por algum inimigo seu", "extra_rolls":  ["Situação", "Novo personagem.Inimigo"]}
+    ],
+
+    "Estilo de Vida Familiar": [
+        {"chance": 0.15, "result": "Aristocrático"},
+        {"chance": 0.1, "result": "Rico"},
+        {"chance": 0.15, "result": "Confortável"},
+        {"chance": 0.3, "result": "Modesto"},
+        {"chance": 0.15, "result": "Pobre"},
+        {"chance": 0.1, "result": "Esquálido"},
+        {"chance": 0.05, "result": "Miserável"}
+    ],
+
+    "Lar na Infância": [
+        {"chance": 0.05, "result": "Nas ruas ou nos ermos"},
+        {"chance": 0.1, "result": "Cabana ou Orfanato"},
+        {"chance": 0.1, "result": "Em uma fazenda"},
+        {"chance": 0.1, "result": "Em uma pousada ou taverna"},
+        {"chance": 0.1, "result": "Em uma casa pequena"},
+        {"chance": 0.25, "result": "Em uma casa mediana"},
+        {"chance": 0.2, "result": "Em uma casa grande"},
+        {"chance": 0.05, "result": "Uma casa aristocrática, repleta de funcionários"},
+        {"chance": 0.05, "result": "Em uma mansão, castelo ou fortaleza"}
+    ],
+
+    "Memórias da Juventude": [
+        {"chance": 0.15,"result": "Não tinha nenhum amigo e passava fome nas ruas"},
+        {"chance": 0.1,"result": "Meus únicos amigos eram aquelas que eu cultivava em minha mente"},
+        {"chance": 0.15,"result": "Não conhecia muita gente, as que conhecia se aproveitavam de mim"},
+        {"chance": 0.25,"result": "Eu tinha poucos amigos, mas eles não eram exatamente… bons"},
+        {"chance": 0.15,"result": "Eu tinha poucos amigos, mas podia contar com eles para qualquer coisa"},
+        {"chance": 0.1, "result": "Eu tinha alguns amigos e podia contar com eles para qualquer coisa"},
+        {"chance": 0.1, "result": "Eu tinha muitos amigos e era respeitado por onde passava"}
+    ],
+
+    "Acólito": [
+        {"chance": 0.16666666666666666,"result": "… ouvi o chamado de uma entidade poderosa"},
+        {"chance": 0.16666666666666666,"result": "… um desconhecido com poderes sobrenaturais ajudou a mim e minha família, gostaria de seguir seu exemplo"},
+        {"chance": 0.16666666666666666,"result": "… o local em que cresci necessitava de muita reparação e cura"},
+        {"chance": 0.16666666666666666,"result": "… o poder em mim já não podia ser contido e eu gostaria de ajudar os outros"},
+        {"chance": 0.16666666666666666,"result": "… eu fazia parte de uma religião/ culto que cultivava meus poderes"},
+        {"chance": 0.16666666666666666,"result": "… os humanos destruíram a magia da minha vila, não deixarei isso acontecer em mais nenhum lugar" }
+    ],
+
+    "Arcano": [
+        {"chance": 0.16666666666666666,"result": "… a magia despertou espontaneamente em mim, com isso, me juntei em aventuras"},
+        {"chance": 0.16666666666666666,"result": "… desde que eu me entendo por gente, eu adoro magias e o caos que elas trazem para o mundo"},
+        {"chance": 0.16666666666666666,"result": "… meu despertar matou algumas pessoas importantes para mim e eu precisava aprender a controlar minha magia"},
+        {"chance": 0.16666666666666666,"result": "… um entidade me amaldiçoou com poderes que eu não desejava"},
+        {"chance": 0.16666666666666666,"result": "… a muitos séculos atrás, uma entidade abençoou minha família com poderes além de minha compreensão"},
+        {"chance": 0.16666666666666666,"result": "… eu passei muitos anos estudando a magia e como controlá-la"}
+    ],
+
+    "Atirador": [
+        {"chance": 0.16666666666666666,"result": "… desde criança eu era muito bom em jogos que precisavam de mira"},
+        {"chance": 0.16666666666666666,"result": "… armas de fogo sempre me fascinaram, e quando tive a oportunidade de ter uma permanentemente, eu agarrei"},
+        {"chance": 0.16666666666666666,"result": "… vivi perto de gangues e nas partes sujas das ruas, com o tempo e observando, aprendi a fazer armas e modificá-las"},
+        {"chance": 0.16666666666666666,"result": "… sempre quis me tornar um policial de Piltover"},
+        {"chance": 0.16666666666666666,"result": "… eu roubei um capanga de um barão químico e precisava sobreviver à sua retaliação"},
+        {"chance": 0.16666666666666666,"result": "… onde cresci, havia apenas uma lei, matar ou ser morto"}
+    ],
+
+    "Bodisatva": [
+        {"chance": 0.16666666666666666,"result": "… precisava de um lugar para me esconder de um crime que cometi, acabei ficando por gostar da vida mais simples"},
+        {"chance": 0.16666666666666666,"result": "… o monastério me criou desde minha infância, eles são a única família que conheci"},
+        {"chance": 0.16666666666666666,"result": "… a vida nas cidades me incomodava e eu preferia um local mais recluso"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre tive um grande controle espiritual e precisava de uma maneira de utilizá-lo"},
+        {"chance": 0.16666666666666666, "result": "… a força de meu espírito estava fora de controle e um monasta me ensinou o caminho para controlá-lo"},
+        {"chance": 0.16666666666666666,"result": "… meu mestre me ensinou e me acolheu como se fosse seu filho"}
+    ],
+
+    "Bruto": [
+        {"chance": 0.16666666666666666,"result": "… eu era muito bom em sair no soco com todo mundo"},
+        {"chance": 0.16666666666666666,"result": "… minha raiva era incontrolável e eu queria tirar proveito disso"},
+        {"chance": 0.16666666666666666,"result": "… a morte gloriosa para um guerreiro é a morte em um campo de batalha"},
+        {"chance": 0.16666666666666666,"result": "… a vida tem que ser simples, bater, matar, comer e dormir"},
+        {"chance": 0.16666666666666666,"result": "… meu pai era um gladiador e lutava para nos sustentar, com o tempo, eu segui os passos dele e decidi lutar pelo que eu quero"},
+        {"chance": 0.16666666666666666,"result": "… o ambiente inóspito em que vivi necessitava que eu fosse forte para sobreviver"}
+    ],
+
+    "Caçador": [
+        {"chance": 0.16666666666666666,"result": "… na tribo em que nasci, esse era nosso estilo de vida"},
+        {"chance": 0.16666666666666666,"result": "… os animais sempre tiveram uma simpatia por mim e eu gostaria de retribuir o favor eliminando aqueles que os caçam"},
+        {"chance": 0.16666666666666666,"result": "… uma criatura horrenda destruiu aqueles que eu amo, agora busco a minha vingança contra todos de sua laia"},
+        {"chance": 0.16666666666666666,"result": "… um ancião de minha vila me ensinou tudo o que eu precisava saber sobre a vida selvagem"},
+        {"chance": 0.16666666666666666,"result": "… minha habilidade com o arco era incomparável"},
+        {"chance": 0.16666666666666666,"result": "… eu almejo estar no topo da cadeia alimentar sendo um caçador supremo"}
+    ],
+
+    "Combatente": [
+        {"chance": 0.16666666666666666,"result": "… eu era bom de briga e me falaram que quem sabia lutar se tornava um guerreiro"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre fui bom em jogos de estratégia e gerenciamento de recursos"},
+        {"chance": 0.16666666666666666,"result": "… eu tinha uma facilidade em utilizar qualquer arma que fosse colocada em minhas mãos"},
+        {"chance": 0.16666666666666666,"result": "… o treinamento militar de minha cidade era obrigatório"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre quis proteger os mais fracos, mesmo que isso me custasse algumas cicatrizes"},
+        {"chance": 0.16666666666666666,"result": "… na minha vila fui sempre um dos melhores especialistas em combate, tanto em estratégias quanto em lutas com armas e armaduras"}
+    ],
+
+    "Mercurial": [
+        {"chance": 0.16666666666666666,"result": "… vim de uma linhagem de assassinos e mercenários"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre fui bom em passar despercebido por todos, agora eu tiro proveito disso"},
+        {"chance": 0.16666666666666666,"result": "… meus pais eram exploradores de tumbas e eu sempre quis seguir seus passos viajando o mundo inteiro"},
+        {"chance": 0.16666666666666666,"result": "… eu não tinhas muitas opções na infância, eu tinha que roubar para comer"},
+        {"chance": 0.16666666666666666,"result": "… a sociedade me excluiu dela, então decidi pagar na mesma moeda"},
+        {"chance": 0.16666666666666666,"result": "… eu me divirto muito em estar na beira da lei, podendo ter um prêmio pela minha cabeça"}
+    ],
+
+    "Peregrino": [
+        {"chance": 0.16666666666666666,"result": "… um celestial viu grande potencial em mim"},
+        {"chance": 0.16666666666666666,"result": "… depois de eu sacrificar minha própria vida pelos que eu amava, uma entidade celeste me deu uma segunda chance"},
+        {"chance": 0.16666666666666666,"result": "… um ser sobrenatural me deu uma missão para que eu agisse em seu nome"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre fui temente aos ensinamentos dos celestiais, sendo recompensado por isso"},
+        {"chance": 0.16666666666666666,"result": "… eu gosto de brilhar e chamar toda a atenção para mim, inclusive a dos deuses"},
+        {"chance": 0.16666666666666666,"result": "… eu senti um chamado para os deveres e honras de um campeão, para trazer vida a suas histórias"}
+    ],
+
+    "Tecmaturgo": [
+        {"chance": 0.16666666666666666,"result": "… sempre fui muito criativo, conseguindo efeitos incríveis através do lixo dos outros"},
+        {"chance": 0.16666666666666666,"result": "… meus pais pagaram uma enorme mensalidade na Faculdade de Tecmaturgia"},
+        {"chance": 0.16666666666666666,"result": "… a tecnologia sempre veio como algo natural para mim"},
+        {"chance": 0.16666666666666666,"result": "… a minha natureza mágica me permite transformar objetos comuns em coisas malucas"},
+        {"chance": 0.16666666666666666,"result": "… sempre me fascinei por tecnologias, consegui uma carreira na área e, após muito conhecimento, parti em aventuras para aprimorar minhas invenções"},
+        {"chance": 0.16666666666666666,"result": "… eu nasci e cresci em meio a grandes inventores e sempre me diverti utilizando ferramentas"}
+    ],
+
+    "Xamã": [
+        {"chance": 0.16666666666666666,"result": "… as vozes dos espíritos falavam comigo desde criança e eu não conseguia mais fingir que não as ouvia"},
+        {"chance": 0.16666666666666666,"result": "… os espíritos me mostraram um caminho que eu deveria trilhar e eu escolhi aceitar essa senda"},
+        {"chance": 0.16666666666666666,"result": "… eu procurei os espíritos para ajudar minha tribo e eles me consideraram digno e me responderam"},
+        {"chance": 0.16666666666666666,"result": "… meu nascimento foi profetizado e quando eu vim ao mundo, fui criado nos costumes para me tornar uma ponte entre os mundos"},
+        {"chance": 0.16666666666666666,"result": "… após me prostrar por nove dias embaixo de uma árvore, o Reino Espiritual se abriu para mim"},
+        {"chance": 0.16666666666666666,"result": "… após meu primeiro contato com os espíritos, eu busquei entender e aprender a respeito"}
+    ],
+
+    "Andarilho": [
+        {"chance": 0.16666666666666666,"result": "… meus inimigos arruinaram minha reputação. Fugi para as florestas para evitar maiores decepções"},
+        {"chance": 0.16666666666666666,"result": "… prefiro ficar longe da sociedade, num lugar mais calmo"},
+        {"chance": 0.16666666666666666,"result": "… a decadência da sociedade me enoja. Prefiro me manter o mais afastado possível"},
+        {"chance": 0.16666666666666666,"result": "… eu adorava fazer caminhadas por aí, até que um dia eu entrei numa fenda em uma árvore e fui parar do outro lado do mundo"},
+        {"chance": 0.16666666666666666,"result": "… eu perdi tudo, meu lar, minha família, meus amigos. Ficar sozinho era tudo o que queria para aquele momento"},
+        {"chance": 0.16666666666666666,"result": "… meus verdadeiros amigos eram as feras da floresta, sempre ao meu lado e me trazendo comida para que eu pudesse sobreviver"}
+    ],
+
+    "Apostador": [
+        {"chance": 0.16666666666666666,"result": "… amo os jogos e seu entretenimento e, é claro, por que não ganhar algo enquanto faço isso"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre gostei de viver na incerteza e na mais pura sorte, sempre apostando tudo o que eu tenho em troca de grandes favores e bens"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre fui muito ágil com as mãos e tinha uma facilidade em roubar em jogos"},
+        {"chance": 0.16666666666666666,"result": "… meu raciocínio e memória sempre foram excepcionais, por conta disso eu fui um grande campeão de Contapedras"},
+        {"chance": 0.16666666666666666,"result": "… eu não sabia fazer outra coisa se não jogar"},
+        {"chance": 0.16666666666666666,"result": "… amo olhar a cara de derrota de meus adversários enquanto eu tomo todas as suas posses"}
+    ],
+
+    "Aristocrata": [
+        {"chance": 0.16666666666666666,"result": "… minha família recebeu essa honraria"},
+        {"chance": 0.16666666666666666,"result": "… me casei com uma linda mulher da aristocracia local"},
+        {"chance": 0.16666666666666666,"result": "… após provar meu valor para o líder de minha cidade, ele me concedeu um título à altura de meus feitos"},
+        {"chance": 0.16666666666666666,"result": "… minha família faz parte dos mais bem sucedidos comerciantes da cidade"},
+        {"chance": 0.16666666666666666,"result": "… eu queria aumentar meu poder e influência"},
+        {"chance": 0.16666666666666666,"result": "… eu me tornei um dos líderes de minha tribo após a morte de meus pais"}
+    ],
+
+    "Artesão": [
+        {"chance": 0.16666666666666666,"result": "… sempre fui muito bom em trabalhos manuais e fiz disso um jeito de ganhar a vida"},
+        {"chance": 0.16666666666666666,"result": "… uma senhora artesã me ensinou tudo sobre seu ofício"},
+        {"chance": 0.16666666666666666,"result": "… eu fui vendido para me tornar um aprendiz de um artesão"},
+        {"chance": 0.16666666666666666,"result": "… o negócio de minha família necessita de grandes artesãos para prosperar"},
+        {"chance": 0.16666666666666666,"result": "… eu queria passar mais tempo quanto possível longe de minha família, mas não tinha como me sustentar sozinho"},
+        {"chance": 0.16666666666666666,"result": "… minha família precisava de ajuda e eu consegui um emprego em que conseguiria pagar nosso sustento"}
+    ],
+
+    "Artista": [
+        {"chance": 0.16666666666666666,"result": "… sempre gostei dos holofotes e eu queria chamar tanta atenção quanto possível"},
+        {"chance": 0.16666666666666666,"result": "… eu possuo um talento natural para mentiras e interpretar papeis longe de minha realidade"},
+        {"chance": 0.16666666666666666,"result": "… sempre fiz palhaçadas e truques e decidi mostrar tudo isso ao mundo!"},
+        {"chance": 0.16666666666666666,"result": "… eu fazia parte de uma charanga com minha família"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre gostei de trazer à tona os sentimentos dos outros, seja um sorriso ou lágrimas"},
+        {"chance": 0.16666666666666666,"result": "… eu vi um trovador fazer uma performance em minha vila, logo quis ser como ele"}
+    ],
+
+    "Charlatão": [
+        {"chance": 0.16666666666666666,"result": "… mentir é 95% do que eu faço, então fiz disso minha vida!"},
+        {"chance": 0.16666666666666666,"result": "… enganar os outros é uma das melhores coisas, você já tentou vender óleo de babosa como um remédio milagroso? É sensacional"},
+        {"chance": 0.16666666666666666,"result": "… me negaram o que me era merecido! Então fui roubar esses idiotas da forma mais prazerosa possível: bem na cara deles"},
+        {"chance": 0.16666666666666666,"result": "… eu aprendi desde que pequeno a me aproveitar dos outros para que eles não se aproveitassem de mim"},
+        {"chance": 0.16666666666666666,"result": "… disseram que meus produtos eram bons demais pra ser verdade, quase miraculosos! É claro, eles estavam certos"},
+        {"chance": 0.16666666666666666,"result": "… eu aprendi a explorar a ganância dos outros"}
+    ],
+
+    "Criação": [
+        {"chance": 0.16666666666666666,"result": "… tinha que proteger a obra do meu mestre!"},
+        {"chance": 0.16666666666666666,"result": "… a própria natureza precisava de alguém que a protegesse, me criando para impedir sua destruição"},
+        {"chance": 0.16666666666666666,"result": "… um inventor louco decidiu testar e criar um ser que estivesse além de seu controle"},
+        {"chance": 0.16666666666666666,"result": "… após muito tempo sendo banhado em magia, eu ganhei consciência e pude finalmente mover o meu corpo"},
+        {"chance": 0.16666666666666666,"result": "… eu estava a beira da morte por conta de uma doença incurável e consegui um jeito de transferir minha mente para um corpo praticamente imortal"},
+        {"chance": 0.16666666666666666,"result": "… meu inventor queria um amigo, um companheiro para ajudá-lo em seus experimentos"}
+    ],
+
+    "Criminoso": [
+        {"chance": 0.16666666666666666,"result": "… não havia outra escolha para sobreviver na minha cidade"},
+        {"chance": 0.16666666666666666,"result": "… eu me divirto causando o sofrimento dos outros"},
+        {"chance": 0.16666666666666666,"result": "… eu estava devendo para um agiota e, em troca de acertar minha divida, ele me cobrou um favor"},
+        {"chance": 0.16666666666666666,"result": "… um antigo rival de minha família estava em posse de um artefato que era parte da herança de nossa família e eu desejava recuperá-lo"},
+        {"chance": 0.16666666666666666,"result": "… sempre fui muito hábil com as mãos e tinha facilidade de falsificar assinaturas e documentos"},
+        {"chance": 0.16666666666666666,"result": "… a vida nas sombras sempre me agradou, mesmo que isso pudesse custar minha liberdade"}
+    ],
+
+    "Desconhecido": [
+        {"chance": 0.16666666666666666,"result": "… o navio no qual eu estava afundou após um ataque mal sucedido de piratas e fui lançado ao mar, largado à própria sorte"},
+        {"chance": 0.16666666666666666,"result": "... entrei no lugar errado na hora errada, apanhei e fui deixado para morrer. Fui resgatado, mas minhas memórias fugiram como o sangue que escorreu de mim"},
+        {"chance": 0.16666666666666666,"result": "… me chamaram para participar de um roubo, que foi mal sucedido. O mago que estávamos roubando conjurou uma maldição que nublou a minha mente e as minhas memórias"},
+        {"chance": 0.16666666666666666,"result": "… eu fazia parte de um experimento que tinha como objetivo fortalecer meu corpo, mas juntamente com isso, minhas memórias se tornaram vagas e oclusas"},
+        {"chance": 0.16666666666666666,"result": "… uma paixão não correspondida sentia extremo ciúme de mim por não poder amá-la, por conta disso ela apagou minha memória para que um dia eu pudesse ser dela"},
+        {"chance": 0.16666666666666666,"result": "… era alguém bem poderoso na minha vida antiga. Graças a uma doença incurável na época, perdi minhas memórias. Depois de curado, fui atrás de viver minha vida novamente"}
+    ],
+
+    "Estudioso": [
+        {"chance": 0.16666666666666666,"result": "… conhecimento é poder e, quanto mais eu possuir, mais influente eu serei"},
+        {"chance": 0.16666666666666666,"result": "… minha sede de conhecimento era insaciável e vaguei pelos 4 cantos do mundo para ampliá-la"},
+        {"chance": 0.16666666666666666,"result": "… sempre gostei de ensinar as novas gerações sobre nosso passado, para que ele não se repetisse"},
+        {"chance": 0.16666666666666666,"result": "… as estrelas sempre me chamaram muita atenção e logo descobri que elas poderiam dizer muito sobre nosso mundo"},
+        {"chance": 0.16666666666666666,"result": "… a magia circunda todas as coisas e eu gostaria de entender mais sobre o porquê disso acontecer"},
+        {"chance": 0.16666666666666666,"result": "… adoro ler desde menor, por isso usei essa paixão para aprimorar meus conhecimentos"}
+    ],
+
+    "Exilado": [
+        {"chance": 0.16666666666666666,"result": "… eu cometi um crime e os anciãos de minha vila me expulsaram"},
+        {"chance": 0.16666666666666666,"result": "… fui deserdado pela minha família após não seguir suas determinações, e decidi me exilar em busca de auto compreensão"},
+        {"chance": 0.16666666666666666,"result": "… libertei um prisioneiro de guerra por considerar sua punição injusta, afinal, ele só estava cumprindo ordens"},
+        {"chance": 0.16666666666666666,"result": "… minha família inteira foi assassinada e tomaram minha casa. Para sobreviver tive que fugir para que um dia eu pudesse retomar o meu lar"},
+        {"chance": 0.16666666666666666,"result": "… alguém cometeu um crime e a culpa dele caiu sobre mim, agora passo meus dias buscando quem me incriminou para que a justiça seja feita"},
+        {"chance": 0.16666666666666666,"result": "… eu envergonhei minha família. Por não conseguir mais encará-los, fugi para longe de minha casa"}
+    ],
+
+    "Forasteiro": [
+        {"chance": 0.16666666666666666,"result": "… minha tribo era nômade e sempre vivi nos ermos da sociedade"},
+        {"chance": 0.16666666666666666,"result": "… nunca gostei do barulho e excesso de pessoas das cidades grandes"},
+        {"chance": 0.16666666666666666,"result": "… detesto pagar para viver. É muito melhor estar entre a natureza e tudo que ela tem a nos oferecer"},
+        {"chance": 0.16666666666666666,"result": "… me sinto mais confortável em estar isolado de tudo e todos"},
+        {"chance": 0.16666666666666666,"result": "… eu passei muito tempo de minha infância na floresta ao redor de minha casa, por conta disso passei a amar a vida selvagem"},
+        {"chance": 0.16666666666666666,"result": "… depois de perder minha família, a melhor solução para fugir daqueles que queriam minha morte era me esconder na escuridão das densas florestas"}
+    ],
+
+    "Gladiador": [
+        {"chance": 0.16666666666666666,"result": "… a vida nas arenas sempre me chamou atenção e eu amava assistir aquele espetáculo"},
+        {"chance": 0.16666666666666666,"result": "… fui vendido e forçado a lutar pela minha vida"},
+        {"chance": 0.16666666666666666,"result": "… minha tribo inteira foi morta e os que restaram foram obrigados a lutar para divertimento dos outros"},
+        {"chance": 0.16666666666666666,"result": "… nada é melhor do que tirar uma vida sem qualquer consequência por isso"},
+        {"chance": 0.16666666666666666,"result": "… me convidaram para um clube secreto de lutadores, infelizmente não posso falar sobre isso"},
+        {"chance": 0.16666666666666666,"result": "… sempre busco uma oportunidade de testar minhas habilidades em combate"}
+    ],
+
+    "Herói Local": [
+        {"chance": 0.16666666666666666,"result": "… eu salvei a família de um nobre de sua casa em chamas"},
+        {"chance": 0.16666666666666666,"result": "… sempre me ensinaram o que era correto e que sempre se deve defender aqueles mais fracos que você"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre me encantei com as histórias e lendas dos grandes heróis do passado. Sempre quis me tornar um deles"},
+        {"chance": 0.16666666666666666,"result": "… gostaria de deixar um legado para trás, onde meu nome fosse cantado pelos bardos e que minha história fosse escrita para a posteridade"},
+        {"chance": 0.16666666666666666,"result": "… minha família está repleta de pessoas marcantes que ajudaram o povo de minha vila"},
+        {"chance": 0.16666666666666666,"result": "… uma velha profeta contou para toda a vila uma profecia grandiosa em que eu seria um grande herói"}
+    ],
+
+    "Inventor": [
+        {"chance": 0.16666666666666666,"result": "… acho extremamente divertido construir dispositivos tecnológicos e mágicos"},
+        {"chance": 0.16666666666666666,"result": "… meu pai tinha uma loja com pequenas bugigangas autômatas que faziam enorme sucesso entre as crianças. Quero um dia ser responsável pelo sorriso de uma dessas crianças"},
+        {"chance": 0.16666666666666666,"result": "… venho de uma família de inventores renomados e fui ensinado desde cedo a seguir esse ofício"},
+        {"chance": 0.16666666666666666,"result": "… acredito que não estamos em nosso potencial máximo e desejo fazer com que nossa evolução seja gloriosa"},
+        {"chance": 0.16666666666666666,"result": "… sempre fui um prodígio e minhas invenções sempre eram aclamadas por todos"},
+        {"chance": 0.16666666666666666,"result": "… amo ver as explosões causadas pelos meus aparatos"}
+    ],
+
+    "Investigador": [
+        {"chance": 0.16666666666666666,"result": "… meus pais foram assassinados e quero encontrar o culpado e fazê-lo pagar por isso"},
+        {"chance": 0.16666666666666666,"result": "… alguém desviou uma enorme quantia de dinheiro e bens da minha família, fazendo com que ela fosse arruinada"},
+        {"chance": 0.16666666666666666,"result": "… sempre fui bom em rastrear os passos dos outros, encontrando pistas nos lugares onde ninguém mais poderia"},
+        {"chance": 0.16666666666666666,"result": "… eu sempre observei os vigias trabalhando e queria poder ter a chance de prender os criminosos"},
+        {"chance": 0.16666666666666666,"result": "… amo a cidade em que vivo e quero os criminosos bem longe dela"},
+        {"chance": 0.16666666666666666,"result": "… a melhor maneira de esconder meus rastros era estando entre aqueles que me procuram"}
+    ],
+
+    "Marujo": [
+        {"chance": 0.16666666666666666,"result": "… eu gosto muito do mar e do movimentar das ondas"},
+        {"chance": 0.16666666666666666,"result": "… eu queria conhecer o mundo inteiro, mas isso era muito difícil de fazer a partir da ilha em que nasci"},
+        {"chance": 0.16666666666666666,"result": "… eu precisava de uma maneira de escapar rapidamente e logo me escondi na carga de um navio"},
+        {"chance": 0.16666666666666666,"result": "… queria fazer algo pela minha nação e a marinha local estava recrutando"},
+        {"chance": 0.16666666666666666,"result": "… minha família é e sempre foi de mercadores de produtos marinhos, logo cresci no mar e não gosto de passar muito tempo longe dele"},
+        {"chance": 0.16666666666666666,"result": "… adorava ouvir as história de monstros marinhos que os velhos pescadores contavam e queria derrotar uma dessas criaturas"}
+    ],
+
+    "Mercenário": [
+        {"chance": 0.16666666666666666,"result": "… de onde eu vim não haviam muitas opções para que pudesse sobreviver"},
+        {"chance": 0.16666666666666666,"result": "… o dinheiro fala mais alto do que todas as coisas"},
+        {"chance": 0.16666666666666666,"result": "… eu amo explorar as tumbas perdidas e os templos esquecidos, conseguindo não apenas um pagamento, mas uma experiência para toda a vida"},
+        {"chance": 0.16666666666666666,"result": "… sempre fui bom em matar e rastrear pessoas, logo fiz disso algo que pudesse ganhar a vida"},
+        {"chance": 0.16666666666666666,"result": "… um maníaco destruiu meu lar e fui salvo por alguém que trabalhava por ouro. Essa pessoa me acolheu, me ensinou a lutar e a sobreviver. Devo tudo a ela"},
+        {"chance": 0.16666666666666666,"result": "… eu queria uma desculpa para que eu pudesse entrar no campo de batalha e sentir meu coração acelerar de emoção"}
+    ],
+
+    "Órfão": [
+        {"chance": 0.16666666666666666,"result": "… meus pais foram assassinados e eu tive que fugir para me manter vivo"},
+        {"chance": 0.16666666666666666,"result": "… meus pais queriam muito de mim e eu fugi para que eu pudesse ser livre e fazer minha próprias escolhas"},
+        {"chance": 0.16666666666666666,"result": "… um dia eu acordei sozinho em minha cama e toda a minha família havia desaparecido, me deixando por conta própria"},
+        {"chance": 0.16666666666666666,"result": "… a magia em mim explodiu de maneira inesperada, fazendo com que meu poder matasse aqueles que eu mais amava"},
+        {"chance": 0.16666666666666666,"result": "… meus pais foram chamados para lutar em uma guerra e nunca mais retornaram"},
+        {"chance": 0.16666666666666666,"result": "… eu fui deixado nas portas de um abrigo com apenas um bilhete com meu nome"}
+    ],
+
+    "Pirata": [
+        {"chance": 0.16666666666666666,"result": "… a vida no mar, bebendo e saqueando, é maravilhosa em todos os sentidos"},
+        {"chance": 0.16666666666666666,"result": "… outros piratas me sequestraram, me forçando a trabalhar em seu navio"},
+        {"chance": 0.16666666666666666,"result": "… minha mãe era uma grande capitã respeitada por todos aqueles que conheciam seu nome. Quando ela morreu, esse fardo caiu sobre mim"},
+        {"chance": 0.16666666666666666,"result": "… um assassino que se auto proclamava o maior dos capitães assassinou meus pais. Eu queria fazer de tudo para que eu pudesse ter a minha vingança"},
+        {"chance": 0.16666666666666666,"result": "… amo ver o olhar de medo no momento em que eu abordo seus navios e enfio uma cimitarra em suas entranhas"},
+        {"chance": 0.16666666666666666,"result": "… a marinha não pagava bem, já a vida de pirata...."}
+    ],
+
+    "Religioso": [
+        {"chance": 0.16666666666666666,"result": "… o templo que me acolheu me ensinou tudo sobre nossa deusa e sua benevolência"},
+        {"chance": 0.16666666666666666,"result": "… os dogmas do meu povo ajudam para que tenhamos uma sociedade pura e próspera"},
+        {"chance": 0.16666666666666666,"result": "… uma entidade poderosa abriu meus olhos para que eu finalmente pudesse enxergar o mal a minha volta"},
+        {"chance": 0.16666666666666666,"result": "… os servos de um deus apareceram na minha vila espalhando sua palavra. Me senti comovido e me juntei a eles"},
+        {"chance": 0.16666666666666666,"result": "… fui ensinado desde pequeno que há apenas uma verdade. Tudo que a contradiga não passam de mentiras e heresia"},
+        {"chance": 0.16666666666666666,"result": "… quando eu estava no fundo do poço um homem de fé me acolheu e me ajudou. Desejo fazer o mesmo pelos outros um dia"}
+    ],
+
+    "Soldado": [
+        {"chance": 0.16666666666666666,"result": "… o alistamento militar de onde eu vim era obrigatório"},
+        {"chance": 0.16666666666666666,"result": "… a guerra sempre assolou minhas terras e eu não podia ficar parado assistindo"},
+        {"chance": 0.16666666666666666,"result": "… a língua das armas é a única que conheço e sei bem como usá-la"},
+        {"chance": 0.16666666666666666,"result": "… eu queria a fama e a fortuna dos grandes soldados do passado. Me juntei ao exército para que eu pudesse ter uma chance disso acontecer"},
+        {"chance": 0.16666666666666666,"result": "… toda minha família sempre fez parte do exército da minha cidade, me garantindo certa facilidade para entrar"},
+        {"chance": 0.16666666666666666,"result": "… era a minha única escolha para sobreviver"}
+    ],
+
+    "Experiências de Vida por Idade": [
+        {"chance": 0.2,"result": "25 anos ou menos.", "extra_rolls":  ["Experiências de Vida"]},
+        {"chance": 0.39,"result": "26-40 anos.", "extra_rolls":  ["Experiências de Vida", "Experiências de Vida"]},
+        {"chance": 0.1,"result": "41-60 anos", "extra_rolls":  ["Experiências de Vida", "Experiências de Vida"]},
+        {"chance": 0.2,"result": "61-80 anos", "extra_rolls":  ["Experiências de Vida", "Experiências de Vida"]},
+        {"chance": 0.1,"result": "81-90 anos", "extra_rolls":  ["Experiências de Vida", "Experiências de Vida", "Experiências de Vida"]},
+        {"chance": 0.01,"result": "91 anos ou mais", "extra_rolls":  ["Experiências de Vida", "Experiências de Vida", "Experiências de Vida", "Experiências de Vida"]}
+    ],
+
+    "Experiências de Vida": [
+        {"chance": 0.15,"result": "Você cometeu um crime, ou pelo menos foi acusado de um. Role na tabela Crimes para saber do que você foi acusado e na tabela Punições para saber a pena de sua acusação.", "extra_rolls": ["Crimes", "Punições"]},
+        {"chance": 0.1,"result": "Você participou de uma aventura. Converse com seu Mestre para saber os detalhes dessa aventura e role na tabela Aventuras para saber o que mais te marcou nesse evento. Role 1d4, caso o resultado seja par, você fez um aliado nessa aventura, caso seja ímpar, você fez um inimigo para toda a vida. Utilize as tabelas suplementares para saber mais sobre essa pessoa.", "extra_rolls": ["Aventuras"]},
+        {"chance": 0.1,"result": "Você conseguiu um favor de uma pessoa muito importante. Utilize as tabelas suplementares para saber sobre essa pessoa e converse com seu Mestre para saber qual é esse favor.", "extra_rolls": ["Novo personagem"]},
+        {"chance": 0.1,"result": "Você sofreu uma terrível tragédia. Role na tabela Tragédias para saber o que te assolou.", "extra_rolls": ["Tragédias"]},
+        {"chance": 0.1,"result": "Você passou muito tempo dedicado ao seu antigo trabalho. Você começa o jogo com 1d6 PO a mais."},
+        {"chance": 0.1,"result": "Algum evento fora do comum aconteceu com você. Role na tabela Eventos Sobrenaturais para saber mais.", "extra_rolls": ["Eventos Sobrenaturais"]},
+        {"chance": 0.1,"result": "Você encontrou o amor e se casou. Utilize as tabelas suplementares para saber mais sobre essa paixão. Caso receba esse resultado mais de uma vez, você pode ter se casado novamente ou ter tido filhos, à sua escolha."},
+        {"chance": 0.1,"result": "Um evento que moveu a mana ocorreu com você ou ao seu redor. Role na tabela Eventos Arcanos para saber o que foi que aconteceu.", "extra_rolls": ["Eventos Arcanos"]},
+        {"chance": 0.05,"result": "Você recebeu a herança de um parente distante que você nunca ouviu falar. Você inicia o jogo com 4d6 PO a mais."},
+        {"chance": 0.05,"result": "Você participou de uma batalha. Role na tabela Batalhas para saber o que houve com você no campo de batalha.", "extra_rolls": ["Batalhas"]},
+        {"chance": 0.04,"result": "Um ser extremamente poderoso lhe concedeu uma bênção. Role na tabela Bênçãos para saber o que ele lhe deu.", "extra_rolls": ["Bençãos"]},
+        {"chance": 0.01,"result": "Algum evento extremamente bizarro e fora do comum aconteceu com você. Role na tabela Acontecimentos Bizarros para mais informações.", "extra_rolls": ["Acontecimentos Bizarros"]}
+    ],
+
+    "Acontecimentos Bizarros": [
+        {"chance": 0.15,"result": "Você foi petrificado em uma estátua e permaneceu dessa maneira por 1d10 séculos"},
+        {"chance": 0.1,"result": "Você foi engolido por um peixe gigante, sendo arrastado por milhas antes que conseguisse escapar de seu estômago"},
+        {"chance": 0.1,"result": "Você conheceu um dragão e ele te ensinou alguns truques"},
+        {"chance": 0.1,"result": "Animais falaram com você e lhe avisaram de um tesouro existente próximo de onde você se encontrava, porém você nunca teve a habilidade de falar com animais"},
+        {"chance": 0.1,"result": "Você viu um peixe andando por aí com suas barbatanas traseiras e vestindo roupas formais"},
+        {"chance": 0.1,"result": "Você foi capturado por um culto e quase foi sacrificado ou alvo de algum experimento, porém você fugiu são e salvo"},
+        {"chance": 0.1,"result": "Você teve que responder perguntas estranhas para atravessar a ponte de um velho estranho"},
+        {"chance": 0.1,"result": "Você se apaixonou por uma criatura capaz de mudar de forma"},
+        {"chance": 0.05,"result": "Você foi atacado por você mesmo! Você venceu a luta mas sua cópia do mal sumiu misteriosamente"},
+        {"chance": 0.05,"result": "Você encontrou uma menina ruiva que te levou para uma aventura em outros reinos de existência. Role na tabela de Eventos Arcanos para determinar para qual loucura ela te levou", "extra_rolls": ["Eventos Arcanos"]},
+        {"chance": 0.04,"result": "Você já encontrou e entrou em um outro reino de existência que não seja o de sua nascença. E você teve várias complicações para conseguir voltar ao seu reino natal"},
+        {"chance": 0.01,"result": "Você enraiveceu uma entidade de outro reino de existência, por conta disso ela alterou a sua forma. Você recebe um traço maior e um menor do Runinata, à escolha do Mestre"}
+    ],
+
+    "Aventuras": [
+        {"chance": 0.15,"result": "Você encontrou uma quantidade magnífica de dinheiro. Você recebe 1d20 + 50 PO pela sua parte"},
+        {"chance": 0.1,"result": "Você ficou terrivelmente assustado com uma criatura mística. Você fugiu e deixou sua equipe a própria sorte"},
+        {"chance": 0.1,"result": "Você e sua equipe encerraram a disputa entre dois clãs guerreiros. Vocês são tidos como lendas no local"},
+        {"chance": 0.1,"result": "Tudo ocorreu bem e você completou o objetivo de sua missão"},
+        {"chance": 0.1,"result": "Você e sua equipe foram pegos por uma tempestade mágica, separando completamente o grupo. Cada um foi teleportado para um local aleatório de Runeterra"},
+        {"chance": 0.1,"result": "Você se feriu levemente e as cicatrizes dessa aventura já foram curadas sem deixar qualquer marca"},
+        {"chance": 0.1,"result": "Você aborreceu um ínfero e ele lhe lançou uma pequena maldição. A próxima vez que você realizar uma salvaguarda ou teste de atributo, você terá desvantagem"},
+        {"chance": 0.1,"result": "Você encontrou uma besta do Vazio, ficando com uma cicatriz permanente em seu corpo"},
+        {"chance": 0.05,"result": "Você conseguiu um acordo fantástico com uma entidade mágica. A próxima que você realizar uma salvaguarda ou teste de atributo, você terá vantagem"},
+        {"chance": 0.05,"result": "Você foi para Bandópolis e ficou amigo de alguns yordles do lugar"},
+        {"chance": 0.04,"result": "Você encontrou um pergaminho perdido de um mago. Você recebe um pergaminho mágico contendo uma magia de até 3º nível, à escolha do Mestre"},
+        {"chance": 0.01,"result": "Você encontrou um item mágico comum, à escolha do Mestre"}
+    ],
+
+    "Batalhas": [
+        {"chance": 0.08333333333333333,"result": "Você perdeu 1d6 dedos"},
+        {"chance": 0.08333333333333333,"result": "Você foi nocauteado e deixado para morrer em meio ao campo de batalha"},
+        {"chance": 0.08333333333333333,"result": "Você ganhou uma cicatriz horrenda em seu rosto"},
+        {"chance": 0.08333333333333333,"result": "A pele de seu corpo foi queimada, deixando uma enorme mancha"},
+        {"chance": 0.08333333333333333,"result": "Você venceu a batalha e todos te vangloriam. Mas um membro seu foi o preço para a vitória"},
+        {"chance": 0.08333333333333333,"result": "Você ganhou um trauma psicológico devido aos horrores que você viu durante a batalha. Você recebe uma loucura permanente (veja o capítulo 13 para mais informações)"},
+        {"chance": 0.08333333333333333,"result": "Seu povo foi massacrado e você foi feito de prisioneiro por anos antes que pudesse escapar"},
+        {"chance": 0.08333333333333333,"result": "Seu corpo está repleto das cicatrizes da batalha"},
+        {"chance": 0.08333333333333333,"result": "Você perdeu um olho, orelha ou nariz"},
+        {"chance": 0.08333333333333333,"result": "Você sofre apenas ferimentos leves, e as feridas foram todas curadas sem deixar nenhuma cicatriz"},
+        {"chance": 0.08333333333333333,"result": "Você se saiu muito bem na batalha e é lembrado pelo seu povo como um herói. Você recebeu uma medalha pela sua coragem"},
+        {"chance": 0.08333333333333333,"result": "Você desertou em meio ao combate, fugindo para o mais longe possível e prometeu nunca mais retornar"}
+    ],
+
+    "Bênçãos": [
+        {"chance": 0.01,"result": "Você foi abençoado desde criança por um celestial, semideus ou um mago extremamente poderoso, essa benção te fez conectado com um item mágico incomum que você encontrará futuramente. O Mestre irá definir em que situação você encontrará esse item e qual será o mesmo"},
+        {"chance": 0.14,"result": "Você foi abençoado com a capacidade de compreender a natureza, podendo ouvir a voz do vento, das pedras e das árvores. Você é tratado como louco por todos à sua volta"},
+        {"chance": 0.2,"result": "Você encontrou um mapa dos tesouros"},
+        {"chance": 0.03,"result": "Você encontrou um baú soterrado abaixo de uma árvore. Você inicia o jogo com uma joia de até 10 PO à sua escolha e 1d20 PO a mais"},
+        {"chance": 0.09,"result": "Um general possui grande afinidade por você. Você inicia o jogo com uma arma simples à sua escolha"},
+        {"chance": 0.09,"result": "Você fez um grande favor para um nobre local e ele lhe concedeu um título de terras em seu território"},
+        {"chance": 0.19,"result": "Um alquimista conhecido lhe deu de presente um Elixir de Frutomel ou um Elixir da Feitiçaria, à sua escolha"},
+        {"chance": 0.1,"result": "Você encontrou um cavalo de montaria"},
+        {"chance": 0.05,"result": "Você recebeu treinamento especial de um ancião. Você recebe proficiência em uma perícia à sua escolha"},
+        {"chance": 0.05,"result": "Você foi abençoado por uma das máscaras da morte, na primeira vez que você morrer, você pode fazer um trato com ela para retornar como um ressurgido, porém, seu alinhamento ficará um passo mais próximo do caótico"},
+        {"chance": 0.04,"result": "Você encontrou uma fonte de água que diminui os efeitos do envelhecimento, conseguindo engarrafar um frasco. Ao bebê-lo você rejuvenesce 1d12 anos. Você nunca mais foi capaz de encontrar essa fonte"},
+        {"chance": 0.01,"result": "Uma entidade lhe concedeu um desejo e você o gastou com um pedido frívolo e momentâneo."}
+    ],
+
+    "Crimes": [
+        {"chance": 0.1,"result": "Você participou de uma gangue que foi detida. Role nessa tabela mais 3 vezes, os resultados, serão os crimes que a gangue cometeu. Ignore esse resultado caso o receba novamente"},
+        {"chance": 0.1,"result": "Plágio ou Falsificação"},
+        {"chance": 0.1,"result": "Destruição de patrimônio público ou privado"},
+        {"chance": 0.1,"result": "Incêndio"},
+        {"chance": 0.1,"result": "Tráfico"},
+        {"chance": 0.1,"result": "Invasão"},
+        {"chance": 0.1,"result": "Furto ou Roubo"},
+        {"chance": 0.1,"result": "Sequestro"},
+        {"chance": 0.1,"result": "Extorsão"},
+        {"chance": 0.1,"result": "Assassinato"}
+    ],
+
+    "Punições": [
+        {"chance": 0.05,"result": "Você foi torturado com uma pena, rindo por horas"},
+        {"chance": 0.25,"result": "Você passou 1d4 anos na prisão ou fugiu dela antes de cumprir sua pena"},
+        {"chance": 0.25,"result": "Serviços comunitários"},
+        {"chance": 0.1,"result": "Você teve que pagar uma multa. Você começa o jogo com 2d4 PO a menos"},
+        {"chance": 0.15,"result": "Prisão domiciliar"},
+        {"chance": 0.05,"result": "Você foi exilado e é proibido de retornar"},
+        {"chance": 0.1,"result": "Humilhação pública"},
+        {"chance": 0.05,"result": "Você foi condenado à pena máxima: morte, mas fugiu antes que conseguissem aplicá-la"}
+    ],
+
+    "Eventos Arcanos": [
+        {"chance": 0.15,"result": "Você conheceu um cachorro, ou gato, que tinha a capacidade de falar"},
+        {"chance": 0.1,"result": "Um Yordle caiu de um portal em cima de sua cabeça, lhe deixando desacordado por 1d4 horas"},
+        {"chance": 0.1,"result": "Um feiticeiro te encantou e fez com que você o servisse durante 1d4 anos"},
+        {"chance": 0.1,"result": "Você atravessou um portal que estava em uma árvore e ficou preso por 1d6 anos dentro dele antes que conseguisse achar a saída"},
+        {"chance": 0.1,"result": "Você foi transformado em um esquilo por 1d4 horas"},
+        {"chance": 0.1,"result": "Um mago lhe concedeu um pergaminho contendo um truque, à escolha do Mestre"},
+        {"chance": 0.1,"result": "Você já pegou um item extremamente mágico e poderoso em suas mãos que se alimentou de sua energia momentaneamente. Você ficou desacordado por 1d4 horas e o item tinha desaparecido de suas mãos"},
+        {"chance": 0.1,"result": "Você encontrou um ser mágico. Esse encontro alterou alguma de suas memórias e você ficou levemente mais caótico"},
+        {"chance": 0.05,"result": "Sua vila ou cidade foi destruída por uma criatura mágica e a maioria dos habitantes fugiu. Você deseja uma vingança por aquela criatura ou até o seu tipo"},
+        {"chance": 0.05,"result": "Você viu a verdadeira forma de um Yordle"},
+        {"chance": 0.04,"result": "Você foi afetado por uma magia de teleporte, se movendo 1d10 milhas de sua cidade ou vila"},
+        {"chance": 0.01,"result": "Seu futuro foi lido por um oráculo. Role 1d4 vezes na tabela Experiências de Vida, mas ao invés de ficar com o resultado o Mestre irá escolher um ou mais para que se torne uma previsão de seu futuro"}
+    ],
+
+    "Eventos Sobrenaturais": [
+        {"chance": 0.15,"result": "Você viu fantasmas no cemitério de sua cidade"},
+        {"chance": 0.1,"result": "Você foi enfeitiçado por uma fada. Ela o levou para a clareira, por onde você ficou por apenas 5 minutos, mas do lado fora passaram-se 1d10 anos"},
+        {"chance": 0.1,"result": "Uma entidade salvou você de uma experiência de quase morte"},
+        {"chance": 0.1,"result": "Você viu a queda de uma estrela"},
+        {"chance": 0.1,"result": "Você viu um de seus antepassados mortos e ele te deu alguns ensinamentos sobre a vida"},
+        {"chance": 0.1,"result": "Você ouviu a voz de um dos celestiais em sua mente, porém, você não conseguiu compreender o que ele dizia"},
+        {"chance": 0.1,"result": "Você já viu um ínfero em ação, fazendo travessuras e voltando para o seu reino de existência"},
+        {"chance": 0.1,"result": "Um azakana atormentou os seus sonhos, e piorou seus pesadelos, brincando com sua mente por 1d6 anos"},
+        {"chance": 0.05,"result": "Você dormiu e acordou misteriosamente em um lugar aleatório distante de onde você estava"},
+        {"chance": 0.05,"result": "Você por alguns instantes viu uma das máscaras da morte de longe, ouvindo elas falarem uma única frase. Isso aconteceu em uma casa, hospital, teatro ou até mesmo em um cemitério"},
+        {"chance": 0.04,"result": "Você viu um enorme espírito agindo diretamente no reino material"},
+        {"chance": 0.01,"result": "Você viu um portal que levava para outro reino de existência"}
+    ],
+
+    "Tragédias": [
+        {"chance": 0.125,"result": "Um ou mais membros de sua família foram mortos. Use a tabela suplementar Causa da Morte para saber o que aconteceu"},
+        {"chance": 0.125,"result": "A energia existente em você explodiu, criando uma cratera em sua casa e acidentalmente ferindo gravemente um ou mais membros de sua família"},
+        {"chance": 0.125,"result": "Seu cônjuge ou parceiro romântico morreu. Utilize a tabela suplementar Causa da Morte para saber como isso aconteceu"},
+        {"chance": 0.125,"result": "Você foi exilado sem nenhuma razão aparente"},
+        {"chance": 0.125,"result": "Você foi amaldiçoado e teve sua forma alterada, seja parcialmente ou totalmente. Converse com seu Mestre para mais detalhes sobre sua nova forma"},
+        {"chance": 0.125,"result": "Um ente querido para você desapareceu sem deixar quaisquer rastros. Você o busca desde então"},
+        {"chance": 0.125,"result": "Você perdeu todas as suas posses em um acidente no mar. Você começa o jogo com apenas 1d4 + 1 itens de seu equipamento inicial"},
+        {"chance": 0.125,"result": "Você foi traído e o traíra saiu impune, enquanto você levou toda culpa. Utilize a tabela suplementar Crimes para saber o que aconteceu"}
+    ],
+
+    "Região": [
+        {"chance": 0.03,"result": "Ilhas das Sombras"},
+        {"chance": 0.05,"result": "Bandópolis"},
+        {"chance": 0.08,"result": "Freljord"},
+        {"chance": 0.1,"result": "Águas de Sentina"},
+        {"chance": 0.07,"result": "Demacia"},
+        {"chance": 0.1,"result": "Shurima"},
+        {"chance": 0.15,"result": "Noxus"},
+        {"chance": 0.11,"result": "Zaun"},
+        {"chance": 0.09,"result": "Targon"},
+        {"chance": 0.09,"result": "Piltover"},
+        {"chance": 0.1,"result": "Ionia"},
+        {"chance": 0.03,"result": "Ixtal"}
+    ],
+
+    "Origem": [
+        {"chance": 0.05,"result": "Meio-Dragão"},
+        {"chance": 0.4,"result": "Humano"},
+        {"chance": 0.1,"result": "Construto"},
+        {"chance": 0.1,"result": "Minotauro"},
+        {"chance": 0.1,"result": "Vastaya"},
+        {"chance": 0.04,"result": "Meio-Vastaya"},
+        {"chance": 0.09,"result": "Yordle"},
+        {"chance": 0.05,"result": "Antroplantæ"},
+        {"chance": 0.05,"result": "Troll"},
+        {"chance": 0.01,"result": "Runinata"},
+        {"chance": 0.01,"result": "Escolha do Mestre"}
+    ],
+
+    "Sexo Biológico": [
+        {"chance": 0.05,"result": "Assexuado"},
+        {"chance": 0.25,"result": "Intersexo"},
+        {"chance": 0.35,"result": "Macho"},
+        {"chance": 0.35,"result": "Fêmea"}
+    ],
+
+    "Relacionamento": [
+        {"chance": 0.3333333333333333,"result": "Indiferente"},
+        {"chance": 0.5,"result": "Amigável"},
+        {"chance": 0.16666666666666666,"result": "Hostil"}
+    ],
+
+    "Situação": [
+        {"chance": 0.15,"result": "Morto"},
+        {"chance": 0.15,"result": "Desaparecido"},
+        {"chance": 0.15,"result": "Vivo, porém incapaz de realizar atividades devido à feridas"},
+        {"chance": 0.2,"result": "Vivo"},
+        {"chance": 0.15,"result": "Vivo e abastado"},
+        {"chance": 0.1,"result": "Vivo, porém com má reputação"},
+        {"chance": 0.1,"result": "Vivo e com boa fama"}
+    ],
+
+    "Causas da Morte": [
+        {"chance": 0.01,"result": "Combustão espontânea"},
+        {"chance": 0.1,"result": "Causa natural, como ataque cardíaco ou velhice"},
+        {"chance": 0.15,"result": "Morto durante um desastre natural, como um terremoto ou furacão"},
+        {"chance": 0.1,"result": "Acidente"},
+        {"chance": 0.05,"result": "Envenenado"},
+        {"chance": 0.05,"result": "Engolido por uma fera marinha"},
+        {"chance": 0.1,"result": "Executado por um crime (role na tabela de Crimes)", "extra_rolls": ["Crimes"]},
+        {"chance": 0.14,"result": "Acidente relacionado à ocupação"},
+        {"chance": 0.05,"result": "Desconhecida"},
+        {"chance": 0.15,"result": "Morto durante combate"},
+        {"chance": 0.1,"result": "Assassinado"}
+    ],
+
+    "Ocupações": [
+        {"chance": 0.04,"result": "Burocrata"},
+        {"chance": 0.04,"result": "Morador de rua"},
+        {"chance": 0.05,"result": "Aventureiro (role na tabela de Classes)", "extra_rolls": ["Classes"]},
+        {"chance": 0.1,"result": "Marinheiro"},
+        {"chance": 0.05,"result": "Artesão (escolha um dos ofícios de artesão)"},
+        {"chance": 0.05,"result": "Lenhador"},
+        {"chance": 0.02,"result": "Vigia"},
+        {"chance": 0.05,"result": "Cenobita"},
+        {"chance": 0.12,"result": "Fazendeiro"},
+        {"chance": 0.05,"result": "Soldado"},
+        {"chance": 0.18,"result": "Sacerdote"},
+        {"chance": 0.05,"result": "Explorador"},
+        {"chance": 0.05,"result": "Bufão"},
+        {"chance": 0.05,"result": "Pirata"},
+        {"chance": 0.05,"result": "Estudioso"},
+        {"chance": 0.05,"result": "Aristocrata"}
+    ],
+
+    "Classes": [
+        {"chance": 0.07,"result": "Acólito"},
+        {"chance": 0.07,"result": "Peregrino"},
+        {"chance": 0.15,"result": "Bruto"},
+        {"chance": 0.07,"result": "Bodisatva"},
+        {"chance": 0.09,"result": "Arcano"},
+        {"chance": 0.08,"result": "Combatente"},
+        {"chance": 0.07,"result": "Mercurial"},
+        {"chance": 0.09,"result": "Atirador"},
+        {"chance": 0.08,"result": "Caçador"},
+        {"chance": 0.17,"result": "Tecmaturgo"},
+        {"chance": 0.06,"result": "Xamã"}
+    ],
+
+    "Passados": [
+        {"chance": 0.05,"result": "Andarilho"},
+        {"chance": 0.05,"result": "Apostador"},
+        {"chance": 0.05,"result": "Aristocrata"},
+        {"chance": 0.05,"result": "Artesão"},
+        {"chance": 0.05,"result": "Artista"},
+        {"chance": 0.05,"result": "Charlatão"},
+        {"chance": 0.05,"result": "Criminoso"},
+        {"chance": 0.05,"result": "Estudioso"},
+        {"chance": 0.05,"result": "Exilado"},
+        {"chance": 0.05,"result": "Forasteiro"},
+        {"chance": 0.05,"result": "Gladiador"},
+        {"chance": 0.05,"result": "Herói Local"},
+        {"chance": 0.05,"result": "Inventor"},
+        {"chance": 0.05,"result": "Investigador"},
+        {"chance": 0.05,"result": "Marujo"},
+        {"chance": 0.05,"result": "Mercenário"},
+        {"chance": 0.05,"result": "Órfão"},
+        {"chance": 0.05,"result": "Pirata"},
+        {"chance": 0.05,"result": "Religioso"},
+        {"chance": 0.05,"result": "Soldado"}
+    ]
+}
